@@ -1,0 +1,12 @@
+{% extends 'layout.html' %}
+
+{% block title %}Mineral List{% endblock %}
+
+{% block content %}
+    <h1>Mineral List</h1>
+
+    {% for mineral in minerals %}
+        <h2>{{ mineral.name }}</h2>
+        {{ mineral.image_caption }}
+    {% endfor %}
+{% endblock %}

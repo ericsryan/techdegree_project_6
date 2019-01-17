@@ -1,10 +1,12 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+
+from .models import Mineral
 
 
 def mineral_list(request):
-    return HttpResponse('Mineral List')
+    minerals = Mineral.objects.all()
+    return render(request, 'minerals/mineral_list.html', {'minerals': minerals})
 
 
 def mineral_detail(request, id):
-    return HttpResponse(f'Mineral Detail {id}')
+    return render(request, 'minerals/mineral_detail.html')
