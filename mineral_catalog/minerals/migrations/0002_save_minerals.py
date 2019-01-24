@@ -5,6 +5,7 @@ from django.db import migrations
 
 from ..models import Mineral
 
+
 def save_minerals_to_db(apps, schema_editor):
 
     with open('minerals.json') as mineral_file:

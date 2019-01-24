@@ -1,7 +1,18 @@
 {% extends 'layout.html' %}
+{% load static %}
 
-{% block title %}Mineral Detail{% endblock %}
+{% block title %}{{ mineral.name }}{% endblock %}
 
 {% block content %}
-    <h1>Mineral Detail</h1>
+<div class="grid_100 mineral__container">
+    <h1 class="mineral__name">{{ mineral.name }}</h1>
+    <div class="mineral__image-bg">
+        <img class="mineral__image" src="{% static image_filename %}">
+        <p class="mineral__caption">{{ mineral.image_caption }}</p>
+    </div>
+    <div class="mineral__table-container">
+        <table class="mineral__table">
+        </table>
+    </div>
+</div>
 {% endblock %}

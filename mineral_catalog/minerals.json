@@ -13172,6 +13172,16 @@
 		"group": "Other"
 	},
 	{
+		"name": "Schraderite",
+		"image filename": "Shraderite.jpeg",
+		"image caption": "\"'To W.W. My star, my perfect silence.' W.W. I mean, who do you figure that is y'know? Woodrow Wilson? Willy Wonka?...Walter White?\"-D.E.A. Hank Shrader",
+		"category": "Fictional Character/Mineral Collector",
+		"cleavage": "Indistinct on the {001}, {100}, and {010}",
+		"luster": "A little on top",
+		"specific gravity": "About 220 lbs.",
+		"group": "homosapien"
+	},
+	{
 		"name": "Tourmaline",
 		"image filename": "240px-TourmalineUSGOV.jpg",
 		"image caption": "Schorl Tourmaline",

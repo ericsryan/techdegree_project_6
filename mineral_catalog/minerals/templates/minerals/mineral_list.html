@@ -3,10 +3,13 @@
 {% block title %}Mineral List{% endblock %}
 
 {% block content %}
-    <h1>Mineral List</h1>
-
+    <div class="grid_100">
+    <ul class="minerals__container">
     {% for mineral in minerals %}
-        <h2>{{ mineral.name }}</h2>
-        {{ mineral.image_caption }}
+        <li class="minerals__item">
+        <a class="minerals__anchor" href="{% url 'detail' pk=mineral.pk %}">{{ mineral.name|truncatewords:1 }}</a>
+        </li>
     {% endfor %}
+    </ul>
+    </div>
 {% endblock %}
