@@ -8,10 +8,16 @@
     <h1 class="mineral__name">{{ mineral.name }}</h1>
     <div class="mineral__image-bg">
         <img class="mineral__image" src="{% static image_filename %}">
-        <p class="mineral__caption">{{ mineral.image_caption }}</p>
+        <p class="mineral__caption">{{ mineral.caption }}</p>
     </div>
     <div class="mineral__table-container">
         <table class="mineral__table">
+            {% for attribute in mineral.attribute_set.all %}
+            <tr>
+                <td>{{ attribute.name }}</td>
+                <td>{{ attribute.content }}</td>
+            </tr>
+            {% endfor %}
         </table>
     </div>
 </div>
