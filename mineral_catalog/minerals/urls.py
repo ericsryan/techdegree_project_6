@@ -19,5 +19,5 @@ from . import views
 
 urlpatterns = [
     path('', views.mineral_list, name='list'),
-    re_path(r'(?P<pk>\d+)/$', views.mineral_detail, name='detail'),
+    path('<slug:pk>/', views.mineral_detail, name='detail'),
 ]

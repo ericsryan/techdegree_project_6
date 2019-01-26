@@ -34,6 +34,7 @@ html { font-size: 62.5%; }
 
 body { background-color: #CAE5D2; font-size: 1.5em; line-height: 1.6; font-weight: 400; font-family: "Cousine"; color: #666; }
 
+
 .bounds { max-width: 800px; margin: 0 auto; padding: 50px 0 150px; overflow: hidden; }
 .bounds--small { max-width: 600px; padding: 50px 10px 150px; }
 
@@ -140,6 +141,7 @@ h5 { font-size: 1.4rem; }
 
 h6 { font-size: 1.4rem; font-weight: normal; color: #999; }
 
+
 @media (min-width: 550px) { h1 { font-size: 3.8rem; }
   h2 { font-size: 2.4rem; }
   h3 { font-size: 1.8rem; }
@@ -190,6 +192,7 @@ table, p, ul { margin-bottom: 2.5rem; }
 .minerals__random { background-color: #384033; box-shadow: 0 0 100px 50px #CAE5D2; color: #fff; padding: 20px 0 20px 0; position: fixed; bottom: 0; text-align: center; width: 100%; }
 .minerals__random .minerals__anchor { display: inline; color: #fff; padding: 6px 24px 5px 24px; }
 .minerals__random .minerals__anchor:hover { color: #384033; }
+
 
 .mineral__container { background-color: #fff; border-radius: 6px; list-style: none; padding: 0; text-align: center; }
 .mineral__name { display: block; width: 100%; margin: 0; font-size: 24px; padding: 30px 0 30px 0; }

@@ -14,7 +14,7 @@
         <table class="mineral__table">
             {% for attribute in mineral.attribute_set.all %}
             <tr>
-                <td>{{ attribute.name }}</td>
+                <td>{{ attribute.name|title }}</td>
                 <td>{{ attribute.content }}</td>
             </tr>
             {% endfor %}
