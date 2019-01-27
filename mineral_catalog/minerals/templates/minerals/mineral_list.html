@@ -1,13 +1,16 @@
 {% extends 'layout.html' %}
+{% load static from staticfiles %}
 
 {% block title %}Mineral List{% endblock %}
+
+{% block link %}<link rel="stylesheet" href="/static/minerals/css/minerals.css">{% endblock %}
 
 {% block content %}
     <div class="grid_100 tooltip">
     <ul class="minerals__container ">
     {% for mineral in minerals %}
         <li class="minerals__item">
-            <span class="tooltiptext" title="{{ mineral.name }}">
+            <span class="" title="{{ mineral.name }}">
                 <a class="minerals__anchor" href="{% url 'detail' pk=mineral.pk %}">{{ mineral.name|truncatewords:1 }}</a>
             </span>
         </li>

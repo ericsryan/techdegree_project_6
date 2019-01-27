@@ -12,8 +12,18 @@ def mineral_list(request):
 def mineral_detail(request, pk):
     """Display the details of the selected mineral."""
     mineral = get_object_or_404(Mineral, pk=pk)
-    image_filename = "minerals/images/{}.jpg".format(mineral.name)
+    image_filename = 'minerals/images/{}.jpg'.format(mineral.name)
     return render(request,
                   'minerals/mineral_detail.html',
+                  {'mineral': mineral,
+                   'image_filename': image_filename})
+
+
+def random_mineral_detail(request):
+    """Display the details of a randomly selected mineral."""
+    mineral = Mineral.objects.order_by('?').first()
+    image_filename = 'minerals/images/{}.jpg'.format(mineral.name)
+    return render(request,
+                  'minerals/random_mineral_detail.html',
                   {'mineral': mineral,
                    'image_filename': image_filename})

@@ -14,21 +14,32 @@ Installation
 1. Download the project on your computer
 2. Unzip and go into the newly established directory
 3. Install a virtual environment:
-    `python3 -m venv tp_6`
-4. Activate the virtuale environment:
-    `source tp_6/bin/activate`
+    'python3 -m venv tp_6'
+4. Activate the virtual environment:
+    'source tp_6/bin/activate'
 5. Install the requirements
-    `pip install -r requirements.txt`
+    'pip install -r requirements.txt'
 The project has no external dependencies, other than Python 3.
+
+To Run the App:
+
+1. Activate the virtual environment:
+    'source tp_6/bin/activate'
+2. Navigate to the app folder:
+    'cd mineral_catalog'
+3. Start the app server:
+    'python manage.py runserver'
+4. Open a web browser and enter the URL:
+    'http://127.0.0.1:8000/'
 
 
 Features
 
-Home Page-The mineral catalog can be accessed from the home page. A random mineral is displayed on the home page and a new mineral can be randomly selected if desired.
-
 Mineral Catalog-A list of all available minerals are displayed. Any mineral my be selected to view on a detail page.
 
 Mineral Details-A page displaying the name, photograph, and mineral details can be accessed from the mineral catalog.
+
+Random Mineral-The user may go to the random mineral page to view a mineral selected at random. A new mineral may be requested from that page. 
 
 
 Thanks Kenneth Love, Chris Howell, Zachary Jackson, Jordan Hoover, and the rest of Team Treehouse!

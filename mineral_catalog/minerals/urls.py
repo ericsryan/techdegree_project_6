@@ -19,5 +19,7 @@ from . import views
 
 urlpatterns = [
     path('', views.mineral_list, name='list'),
+    path('random/', views.random_mineral_detail, name='random'),
     path('<slug:pk>/', views.mineral_detail, name='detail'),
+
 ]

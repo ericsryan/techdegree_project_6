@@ -11,6 +11,7 @@
         <link href='https://fonts.googleapis.com/css?family=Cousine' rel='stylesheet' type='text/css'>
         {% block link %}{% endblock %}
     </head>
+
     <body>
         <div class="bounds">
             <div class="grid_100">
@@ -24,6 +25,13 @@
                 </a>
                 <p class="logo__text text-centered"><a href="{% url 'detail' pk='schraderite' %}">They're not rocks!</a></p>
             </div>
+            <nav>
+                <ul>
+                    <li><a class="minerals__anchor" href="/">Home</a></li>
+                    <li><a class="minerals__anchor" href="{% url 'list' %}">Mineral List</a></li>
+                    <li><a class="minerals__anchor" href="{% url 'random' %}">Random Mineral</a></li>
+                </ul>
+            </nav>
             {% block content %}{% endblock %}
         </div>
     </body>
