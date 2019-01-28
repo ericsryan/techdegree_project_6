@@ -33,7 +33,7 @@ def order_attributes(apps, schema_editor):
     attributes = sorted(attributes,
                         key=lambda attribute: attribute[1],
                         reverse=True)
-    # Assign the order number to each attribute
+    # Assign an order number to each attribute
     for order, attribute in enumerate(attributes):
         attribute[1] = order
     # Generate dictionary from the attributes list
