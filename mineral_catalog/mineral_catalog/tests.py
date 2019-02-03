@@ -22,7 +22,7 @@ class ModelTests(TestCase):
         attribute = Attribute.objects.create(
             name="category",
             content="Mineral",
-            mineral=Mineral.objects.get(pk=1)
+            mineral=Mineral.objects.get(name="Test")
         )
         self.assertEqual(attribute.name, "category")
 
@@ -40,6 +40,11 @@ class MineralViewsTests(TestCase):
                 mineral=Mineral.objects.get(name="Test")
             )
 
+    def test_index_view(self):
+        resp = self.client.get(reverse('index'))
+        self.assertEqual(resp.status_code, 200)
+        self.assertTemplateUsed(resp, 'index.html')
+
     def test_mineral_list_view(self):
         resp = self.client.get(reverse('list'))
         self.assertEqual(resp.status_code, 200)
@@ -52,3 +57,8 @@ class MineralViewsTests(TestCase):
                                        kwargs={'pk':self.mineral.pk}))
         self.assertEqual(resp.status_code, 200)
         self.assertEqual(self.mineral, resp.context['mineral'])
+
+    def test_random_mineral_view(self):
+        resp = self.client.get(reverse('random'))
+        self.assertEqual(resp.status_code, 200)
+        self.assertTemplateUsed(resp, 'minerals/random_mineral_detail.html')
