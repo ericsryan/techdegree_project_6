@@ -9,7 +9,6 @@
         <link rel="stylesheet" href="{% static 'css/global.css' %}">
         <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,500' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Cousine' rel='stylesheet' type='text/css'>
-        {% block link %}{% endblock %}
     </head>
 
     <body>
@@ -27,9 +26,9 @@
             </div>
             <nav>
                 <ul>
-                    <li><a class="minerals__anchor" href="/">Home</a></li>
-                    <li><a class="minerals__anchor" href="{% url 'list' %}">Mineral List</a></li>
-                    <li><a class="minerals__anchor" href="{% url 'random' %}">Random Mineral</a></li>
+                    <li class="nav-li"><a class="minerals__anchor" href="/">Home</a></li>
+                    <li class="nav-li"><a class="minerals__anchor" href="{% url 'list' %}">Mineral List</a></li>
+                    <li class="nav-li"><a class="minerals__anchor" href="{% url 'random' %}">Random Mineral</a></li>
                 </ul>
             </nav>
             {% block content %}{% endblock %}

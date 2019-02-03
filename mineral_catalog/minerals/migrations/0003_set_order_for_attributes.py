@@ -48,7 +48,7 @@ def order_attributes(apps, schema_editor):
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('minerals', '0002_auto_20190126_2321'),
+        ('minerals', '0002_save_minerals_to_db'),
     ]
 
     operations = [

@@ -6,7 +6,7 @@ _________________________________________________________________
 
 Introduction
 
-This program was developed to implement skills that were learned for using Django to use Python on the internet. This program will allow users to view a mineral catalog. The mineral catalog is generated from details stored in a .JSON file. The minerals are displayed using templates generated in Django.
+This program was developed to implement skills that were learned for using Django in order to use Python on the internet. This program will allow users to view a mineral catalog. The mineral catalog is generated from details stored in a .JSON file. The minerals are displayed using templates generated in Django.
 
 
 Installation

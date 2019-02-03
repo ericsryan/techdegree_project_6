@@ -5,7 +5,7 @@ body { margin: 0; }
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary { display: block; }
 
 a { background-color: transparent; }
-a:active, a:hover { outline: 0; }
+a:active, a:hover { outline: 0; color: #734202;}
 
 h1 { font-size: 2em; margin: 0.67em 0; }
 
@@ -35,7 +35,7 @@ html { font-size: 62.5%; }
 body { background-color: #bbdeed; font-size: 1.5em; line-height: 1.6; font-weight: 400; font-family: "Cousine"; color: #666; }
 
 .nav-li {
-
+    display: inline-block;
 }
 
 .bounds { max-width: 800px; margin: 0 auto; padding: 50px 0 150px; overflow: hidden; }
