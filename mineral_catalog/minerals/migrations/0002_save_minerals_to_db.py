@@ -8,7 +8,7 @@ from ..models import Mineral, Attribute
 
 def save_minerals_to_db(apps, schema_editor):
     """Add minerals from the .JSON file to the database."""
-    with open('minerals.json') as mineral_file:
+    with open('minerals.json', encoding='utf-8') as mineral_file:
         data = json.load(mineral_file)
 
     for mineral in data:
